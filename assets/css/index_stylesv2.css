@@ -39,6 +39,17 @@ main {
   color: #fff;
 }
 
+.opciones button {
+  background-color: darkslateblue;
+  border: none;
+  color: #fff;
+}
+
+.opciones button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
 /* Estilo para el footer */
 footer {
   color: #fff;
