@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Depositar dinero- Alke Wallet</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- ESTILO CSS DEPOSIT -->
+    <link rel="stylesheet" href="./assets/css/deposit_styles.css">
+</head>
+
+<body>
+    <div id="contenedor-alertas" style="min-height: 60px;"></div>
+    <header>
+        <div>
+            <h2>Bienvenido a tu</h2>
+            <h1 class="display-1 pb-4">💰 Alke Wallet 💰</h1>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container pb-4 my-3 bg-light">
+            <section id="account">
+                <div class="m-3 pb-4">
+                    <h4 class="text-center">Dinero en tu cuenta:</h4>
+                    <h3 class="text-center bg-primary-subtle" id="pantalla-saldo">$<span
+                            id="saldo-monto">53.500.333</span>
+                    </h3>
+                </div>
+            </section>
+
+            <section id="deposit">
+                <p>Ingresa el monto que deseas depositar a tu cuenta:</p>
+                <form class="border-rounded m-3 pb-1" id="depositForm">
+
+                    <div class="mb-3">
+                        <label for="depositAmount" class="form-label">Monto a depositar:</label>
+                        <input type="number" class="form-control" id="depositAmount" placeholder="Enter amount" required
+                            min="1">
+                    </div>
+
+                    <div class="container p-0">
+                        <button id="btnDeposit" type="submit" class="btn btn-primary">Depositar dinero</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+
+        <div class="mt-4 container" id="endSession">
+            <button class="btn" id="btn-return">Ir al menú principal</button>
+        </div>
+
+        <section class="container" id="spacer">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Alke Wallet - Jimena Mellado 🧚🏻‍♀️</p>
+    </footer>
+
+    <!-- JS JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- DEPOSIT JS -->
+    <script src="./assets/js/deposit.js"></script>
+</body>
+
+</html>
