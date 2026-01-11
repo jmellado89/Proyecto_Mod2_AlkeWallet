@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+  padding: 20px;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Estilos del encabezado */
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+main {
+  flex: 1;
+}
+
+/* Estilo para los botones */
+.opciones a {
+  background-color: darkslateblue;
+  border: none;
+  color: #fff;
+}
+
+.opciones a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.opciones button {
+  background-color: darkslateblue;
+  border: none;
+  color: #fff;
+}
+
+.opciones button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Estilo para el footer */
+footer {
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  min-height: 50px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  main {
+    padding: 50px;
+  }
+}
