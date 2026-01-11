@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviar dinero- Alke Wallet</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- ESTILOS CSS SENDMONEY -->
+    <link rel="stylesheet" href="./assets/css/sendmoney_styles.css">
+</head>
+
+<body>
+    <div id="contenedor-alertas" style="min-height: 20px;"></div>
+    <header>
+        <div>
+            <h2>Bienvenido a tu</h2>
+            <h1 class="display-1 pb-4">💰 Alke Wallet 💰</h1>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container pb-4 bg-light">
+            <section id="account">
+                <div class="mt-4 pb-4">
+                    <h4 class="text-center">Dinero en tu cuenta:</h4>
+                    <h3 class="text-center" id="pantalla-saldo">$<span id="saldo-monto">53.500.333</span>
+                    </h3>
+                </div>
+            </section>
+
+            <h2 class="text-center">Enviar Dinero</h2>
+            <form id="formEnvio" class="border-rounded">
+                <div class=".container-sm bg-light">
+                    <p class="pt-4">Selecciona un contacto:</p>
+                    <div class="table-responsive">
+                        <table class="table table-light table-striped table-hover table-bordered table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Apellido</th>
+                                    <th scope="col">RUT</th>
+                                    <th scope="col">Banco</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="radioNoLabel"
+                                                id="radioNoLabel1" value="Juan Perez" aria-label="...">
+                                        </div>
+                                    </td>
+                                    <td>Juan</td>
+                                    <td>Pérez</td>
+                                    <td>12.345.678-9</td>
+                                    <td>Banco Estado</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="radioNoLabel"
+                                                id="radioNoLabel1" value="María Soto" aria-label="...">
+                                        </div>
+                                    </td>
+                                    <td>María</td>
+                                    <td>Soto</td>
+                                    <td>15.987.654-3</td>
+                                    <td>Santander</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="radioNoLabel"
+                                                id="radioNoLabel1" value="Carlos Ruiz" aria-label="...">
+                                        </div>
+                                    </td>
+                                    <td>Carlos</td>
+                                    <td>Ruiz</td>
+                                    <td>18.123.456-0</td>
+                                    <td>BCI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <div id="btn-contacto">
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal"
+                            data-target="#exampleModal">
+                            ➕ Agregar nuevo contacto
+                        </button>
+                    </div>
+
+                </div>
+                <div class="container pl-0">
+                    <div class="my-4 container">
+                        <label for="ammount" class="form-label">Monto:</label>
+                        <input type="number" class="form-control" id="ammount" placeholder="Ingresa monto a enviar"
+                            min="1">
+                    </div>
+                    <div class="pb-3 mt-2 container btn-group-vertical" id="enviar">
+                        <button id="btn-confirmar" type="submit" class="btn btn-primary">Enviar dinero</button>
+                    </div>
+                </div>
+        </div>
+        </form>
+        </div>
+
+
+        <div class="mt-4 container" id="endSession">
+            <!-- <a href="./menu.html"> -->
+            <button class="btn" id="btn-return">Ir al menú principal</button>
+            <!-- </a> -->
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Agregar nuevo contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formModal">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre:</label>
+                                <input type="text" id="name" name="firstname" class="form-control"
+                                    placeholder="Ingresa tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastname" class="form-label">Apellidos:</label>
+                                <input type="text" id="lastname" name="lastname" class="form-control"
+                                    placeholder="Ingresa tus apellidos" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="idnumber" class="form-label">RUT:</label>
+                                <input type="text" id="idnumber" name="idnumber" class="form-control"
+                                    placeholder="Ingresa tu RUT" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="mail@email.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bank" class="form-label">Banco:</label>
+                                <input type="bank" id="bank" name="bank" class="form-control" placeholder="Banco"
+                                    required>
+                            </div>
+                            <div class="mb-5">
+                                <label for="account" class="form-label">Número de cuenta:</label>
+                                <input type="number" id="account" name="account" class="form-control"
+                                    placeholder="Número de cuenta" required>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+                            </div>
+                            <div class="btn-group" id="btn-modal">
+                                <button type="submit" class="btn btn-primary">Crear
+                                    contacto</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container" id="spacer">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Alke Wallet - Jimena Mellado 🧚🏻‍♀️</p>
+    </footer>
+
+    <!-- JS JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- SENDMONEY JS -->
+    <script src="./assets/js/sendmoney.js"></script>
+</body>
+
+</html>
