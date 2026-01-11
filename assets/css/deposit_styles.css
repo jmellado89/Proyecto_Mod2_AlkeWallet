@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+  padding: 20px;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+.display-1 {
+  font-size: 50px;
+}
+
+/* Estilos del encabezado */
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+header h1 {
+  font-size: 50px;
+}
+h3 {
+  background-color: rgb(203, 197, 245);
+}
+
+/* Estilos del contenido principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#deposit button {
+  background-color: darkslateblue;
+  color: #fff;
+}
+
+#deposit button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+#endSession button {
+  background-color: #000000;
+  color: #fff;
+}
+
+#endSession button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+#spacer {
+  height: 10vh;
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: darkslateblue;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
