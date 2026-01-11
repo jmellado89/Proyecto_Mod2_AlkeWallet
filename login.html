@@ -22,20 +22,18 @@
 </head>
 
 <body>
+
+  <div id="contenedor-alertas" style="min-height: 60px;"></div>
   <header>
     <div>
       <h2>Bienvenido a tu</h2>
-      <h1 class="display-1">💰 Alke Wallet 💰</h1>
-      <div class="container">
-        <!-- <a href="./indexv2.html"> -->
-        <button class="endSession btn mt-4" id="btn-inicio">Inicio</button>
-        <!-- </a> -->
-      </div>
+      <h1 class="display-1 pb-4">💰 Alke Wallet 💰</h1>
     </div>
   </header>
 
 
   <main>
+
 
     <div class="opciones container  p-4 mb-3 bg-light">
       <form class="border-rounded login" id="formLogin">
@@ -59,20 +57,30 @@
         </div>
 
 
-        <div class="py-2 d-grid">
-          <button type="submit" class="btn">Ingresar</button>
+
+        <div class="container">
+          <button type="submit" class="btn btn-block">Ingresar</button>
         </div>
+
+
 
       </form>
     </div>
 
     <div class="py-4 register container mx-auto">
       <p class="text-center">¿No tienes una cuenta? Entonces, regístrate</p>
-      <button class="btn" id="btn-register">Regístrate</button>
+      <button class="btn btn-block" id="btn-register">Regístrate</button>
+    </div>
+
+    <div class="container">
+      <!-- <a href="./indexv2.html"> -->
+      <button class="endSession btn btn-block btn-outline-dark" id="btn-inicio">Volver al inicio</button>
+      <!-- </a> -->
     </div>
 
 
   </main>
+  <section id="spacer"></section>
 
   <footer>
     <p>© 2025 Alke Wallet - Jimena Mellado 🧚🏻‍♀️</p>

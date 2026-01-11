@@ -5,8 +5,16 @@ $(document).ready(function () {
     var inputPassword = $("#mi-password").val();
 
     if (inputEmail == "test@test.com" && inputPassword == "test") {
-      alert("Bienvenid@ a tu Wallet!");
-      window.location.href = "menu.html";
+      const alerta = `
+                    <div class="alert alert-primary" role="alert">
+            Bienvenido a tu Alke Wallet!
+        </div>`;
+
+      $("#contenedor-alertas").html(alerta);
+
+      setTimeout(function () {
+        window.location.href = "menu.html";
+      }, 2000);
     } else {
       alert("Credenciales incorrectas!");
     }
