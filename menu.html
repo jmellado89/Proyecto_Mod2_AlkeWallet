@@ -12,44 +12,80 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
+  <!-- Bootstrap 4.6.2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+  <!-- ESTILO CSS MENU -->
   <link rel="stylesheet" href="./assets/css/menu_styles.css">
 </head>
 
 <body>
+  <div id="contenedor-alertas" style="min-height: 60px;"></div>
   <header>
-    <h1>💰 Alke Wallet 💰</h1>
-    <a href="./index.html">
-      <button class="endSession">Cerrar sesión</button>
-    </a>
+    <div>
+      <h2>Bienvenido a tu</h2>
+      <h1 class="display-1 pb-4">💰 Alke Wallet 💰</h1>
+
+    </div>
   </header>
 
   <main>
-    <section id="account">
-      <h4>Dinero en tu cuenta:</h4>
-      <h3>$53.500.333</h3>
+    <div class="container pb-4 my-3 bg-light">
+      <section id="account">
+        <div class="m-3 pb-4">
+          <h4 class="text-center">Dinero en tu cuenta:</h4>
+          <h3 class="text-center">$53.500.333</h3>
+        </div>
+      </section>
+      <section id="options">
+        <p>Selecciona lo que deseas hacer con tu dinero:</p>
+        <div class="container"></div>
+        <div class="container pb-2">
+
+          <button class="btn btn-primary" id="btnDeposit">Depositar dinero</button>
+        </div>
+
+        <div class="container pb-2">
+          <button class="btn btn-primary" id="btnSendMoney">Enviar dinero</button>
+        </div>
+
+        <div class="container pb-2">
+          <button class="btn btn-primary" id="btnTransactions">Mis movimientos</button>
+        </div>
+
+    </div>
+    </div>
     </section>
+    </div>
 
+    <div class="mt-4 container" id="endSession">
 
-    <section id="options">
-      <h5>Selecciona lo que deseas hacer con tu dinero:</h5>
-      <a href="./deposit.html">
-        <button id="deposit">Depositar dinero</button>
-      </a>
-      <a href="./sendmoney.html">
-        <button id="sendmoney">Enviar dinero</button>
-      </a>
-      <a href="./transaction.html">
-        <button id="transaction">Mis movimientos</button>
-      </a>
+      <button class="btn">Cerrar sesión</button>
+
+    </div>
+    <section class="container" id="spacer">
+
     </section>
-
 
   </main>
 
   <footer>
     <p>© 2025 Alke Wallet - Jimena Mellado 🧚🏻‍♀️</p>
   </footer>
+
+  <!-- JS JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- JS BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- MENU JS -->
+  <script src="./assets/js/menu.js"></script>
+
 </body>
 
 </html>
