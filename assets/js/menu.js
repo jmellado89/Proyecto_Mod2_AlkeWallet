@@ -34,7 +34,7 @@ $(document).ready(function () {
     $("#contenedor-alertas").html(alerta);
 
     setTimeout(function () {
-      window.location.href = "transactions.html";
+      window.location.href = "transaction.html";
     }, 2000);
   });
 
