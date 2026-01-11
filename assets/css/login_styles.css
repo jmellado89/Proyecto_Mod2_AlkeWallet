@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+  padding: 20px;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.display-1 {
+  font-size: 50px;
+}
+
+/* Estilos del encabezado */
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.endSession {
+  background-color: slategray;
+  color: #fff;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Estilos sección login */
+
+.login input {
+  font-size: 12px;
+}
+
+.login label {
+  font-size: 13px;
+}
+
+.login button {
+  background-color: darkslateblue;
+  color: #fff;
+}
+
+.login button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.register button {
+  background-color: #000000;
+  color: #fff;
+}
+
+.register button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+#spacer {
+  height: 5vh;
+}
+
+p {
+  color: #fff;
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: darkslateblue;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 12px;
+}
