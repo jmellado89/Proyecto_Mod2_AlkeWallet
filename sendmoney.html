@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviar dinero- Alke Wallet</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="./assets/css/sendmoney_styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>💰 Alke Wallet 💰</h1>
+        <a href="./index.html">
+            <button class="endSession">Cerrar sesión</button>
+        </a>
+    </header>
+
+    <main>
+        <section id="account">
+            <h4>Dinero en tu cuenta:</h4>
+            <h3>$53.500.333</h3>
+        </section>
+
+        <h1>Enviar dinero</h1>
+        <section id="contacts">
+            <h2>Lista de contactos</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>RUT</th>
+                    <th>Cuenta</th>
+                </tr>
+                <tr>
+                    <td>Lorena Mellado</td>
+                    <td>6.323.445-5</td>
+                    <td>7886454637</td>
+                </tr>
+                <tr>
+                    <td>Rodrigo Melo</td>
+                    <td>12.445.876-k</td>
+                    <td>5665675676</td>
+                </tr>
+                <tr>
+                    <td>Juan Rodriguez</td>
+                    <td>18.332.123-1</td>
+                    <td>0909898787</td>
+                </tr>
+            </table>
+            <div>
+                <button type="addContact">Agregar contacto</button>
+            </div>
+        </section>
+
+        <br>
+
+        <section id="sendmoney">
+            <h5>Ingresa el monto que deseas depositar a tu cuenta:</h5>
+            <form>
+                <div>
+                    <label for="destination">Destinatario</label>
+                    <input type="text" required />
+                </div>
+                <div>
+                    <label for="ammount">Monto a enviar</label>
+                    <input type="number" required min="1" />
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+
+
+            <div id="return">
+                <a href="./menu.html">
+                    <button id="return">Volver a mi cuenta</button>
+                </a>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Alke Wallet - Jimena Mellado 🧚🏻‍♀️</p>
+    </footer>
+</body>
+
+</html>
