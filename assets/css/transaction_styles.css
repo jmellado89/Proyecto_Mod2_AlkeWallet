@@ -1,18 +1,21 @@
-
 /* Estilos generales */
 body {
-  display:flex;
+  padding: 20px;
+  background-color: darkslateblue;
+  display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
-  padding: 0;
+}
+
+.display-1 {
+  font-size: 50px;
 }
 
 /* Estilos del encabezado */
 header {
   color: #fff;
-  background-color:darkslateblue;
   padding: 20px;
   text-align: center;
   text-shadow: 2px 2px 4px #000000;
@@ -21,66 +24,37 @@ header {
 header h1 {
   font-size: 50px;
 }
-
+h3 {
+  background-color: rgb(203, 197, 245);
+}
 
 /* Estilos del contenido principal */
-main {
-  padding-left: 15px;
-  padding-right:15px;
-  flex:1;
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
 }
 
-h4 {
-  margin-top: 5px;
+#endSession button {
+  background-color: #000000;
+  color: #fff;
 }
 
-h3 {
-  background-color: #8c85b7;
-  text-align: center;
-  padding-left: 0;
-  padding:20px;
+#endSession button:hover {
+  background-color: #fff;
+  color: #000000;
 }
 
-#deposit a {
-  text-decoration: none;
-}
-
-#deposit div {
-  padding-bottom: 20px;
-}
-
-#deposit button {
-  margin-bottom: 20px;
-}
-
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-header {
-padding: 10px;
-}
-
-
-main {
-padding: 10px;
-}
+#spacer {
+  height: 5vh;
 }
 
 /* Estilo para el footer */
 footer {
-  background-color:darkslateblue;
-  color:#fff;
-  padding: 20px 0; 
+  background-color: darkslateblue;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-}
-
-/* Estilo para botones */
-button {
-  background-color:#000000; 
-  color:#fff;            
-  padding: 10px 20px;      
-  border: none;            
-  border-radius: 10px;      
-  cursor: pointer;         
-  font-size: 16px;        
 }

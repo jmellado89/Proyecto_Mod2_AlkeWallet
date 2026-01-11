@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis movimientos - Alke Wallet</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -11,59 +12,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
 
-    <title>Mis movimientos - Alke Wallet</title>
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- ESTILO CSS TRANSACTIONS -->
     <link rel="stylesheet" href="./assets/css/transaction_styles.css">
 </head>
 
 <body>
+    <div id="contenedor-alertas" style="min-height: 60px;"></div>
     <header>
-        <h1>💰 Alke Wallet 💰</h1>
+        <div>
+            <h2>Bienvenido a tu</h2>
+            <h1 class="display-1 pb-4">💰 Alke Wallet 💰</h1>
+
+        </div>
     </header>
 
     <main>
-        <section id="account">
-            <h4>Dinero en tu cuenta:</h4>
-            <h3>$53.500.333</h3>
-        </section>
+        <div class="container pb-2 mb-3 bg-light">
+            <section id="account">
+                <div class="m-3">
+                    <h4 class="text-center">Dinero en tu cuenta:</h4>
+                    <h3 class="text-center bg-primary-subtle" id="pantalla-saldo">$<span
+                            id="saldo-monto">53.500.333</span>
+                    </h3>
+                </div>
+            </section>
 
-        <section id="Transactions">
-            <h2>Mis movimientos</h2>
-            <table>
-                <tr>
-                    <th>Fecha</th>
-                    <th>Tipo</th>
-                    <th>Monto</th>
-                    <th>Destinatario</th>
-                </tr>
-                <tr>
-                    <td>03/12/2025</td>
-                    <td>Envío</td>
-                    <td>$40.000</td>
-                    <td>Lorena Perez</td>
-                </tr>
-                <tr>
-                    <td>05/11/2025</td>
-                    <td>Depósito</td>
-                    <td>$50.000</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td>23/10/2025</td>
-                    <td>Envío</td>
-                    <td>$20.500</td>
-                    <td>Marta Cruz</td>
-                </tr>
-            </table>
-
-        </section>
-
-        <br>
-
-        <div id="return">
-            <a href="./menu.html">
-                <button id="return">Volver a mi cuenta</button>
-            </a>
+            <section id="Transactions">
+                <div class=".container-sm bg-light">
+                    <h2 class="text-center p-3">Mis Movimientos</h2>
+                    <div class="table-responsive">
+                        <table class="table table-light table-striped table-hover table-bordered table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Tipo</th>
+                                    <th scope="col">Monto</th>
+                                    <th scope="col">Destinatario</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>03/12/2025</td>
+                                    <td>Envío</td>
+                                    <td>$40.000</td>
+                                    <td>Lorena Perez</td>
+                                </tr>
+                                <tr>
+                                    <td>05/11/2025</td>
+                                    <td>Depósito</td>
+                                    <td>$50.000</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>23/10/2025</td>
+                                    <td>Envío</td>
+                                    <td>$20.500</td>
+                                    <td>Marta Cruz</td>
+                                </tr>
+                                <tr>
+                                    <td>13/10/2025</td>
+                                    <td>Depósito</td>
+                                    <td>$100.000</td>
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <td>01/10/2025</td>
+                                    <td>Envío</td>
+                                    <td>$10.500</td>
+                                    <td>Lorena Perez</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </section>
         </div>
+
+
+        <div class="pt-2 container" id="endSession">
+            <button class="btn" id="btn-return">Ir al menú principal</button>
+        </div>
+
+        </section>
+
+        <section class="container" id="spacer">
 
         </section>
 
@@ -73,6 +108,20 @@
     <footer>
         <p>© 2025 Alke Wallet - Jimena Mellado 🧚🏻‍♀️</p>
     </footer>
+
+    <!-- JS JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- DEPOSIT JS -->
+    <script src="./assets/js/transactions.js"></script>
+
+
 </body>
 
 </html>
