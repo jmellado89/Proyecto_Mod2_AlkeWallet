@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     if (inputEmail == "test@test.com" && inputPassword == "test") {
       const alerta = `
-                    <div class="alert alert-primary shadow fixed-top m-3" role="alert">
+                    <div class="alert alert-primary shadow fixed-top m-3 text-center" role="alert">
             Bienvenido a tu Alke Wallet!
         </div>`;
 
