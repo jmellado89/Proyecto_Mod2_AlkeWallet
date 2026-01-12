@@ -38,7 +38,7 @@ h3 {
 }
 
 table td {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #enviar button {
@@ -89,7 +89,7 @@ table td {
 }
 
 #spacer {
-  height: 10vh;
+  height: 5vh;
 }
 
 /* Estilo para el footer */
@@ -98,4 +98,5 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  font-size: 12px;
 }
