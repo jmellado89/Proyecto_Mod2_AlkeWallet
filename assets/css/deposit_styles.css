@@ -57,7 +57,7 @@ h3 {
 }
 
 #spacer {
-  height: 10vh;
+  height: 5vh;
 }
 
 /* Estilo para el footer */
@@ -66,4 +66,5 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  font-size: 12px;
 }

@@ -14,7 +14,7 @@ $(document).ready(function () {
     // const displaySaldo = $('#saldo-monto');
     $("#saldo-monto").text(saldoFormateado);
     const alerta = `
-                    <div class="alert alert-success shadow fixed-top m-3" role="alert">
+                    <div class="alert alert-success shadow fixed-top m-3 text-center" role="alert">
   ✅ Depósito realizado con éxito!
 </div>`;
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
   $("#btn-return").click(function () {
     const alerta = `
-                    <div class="alert alert-primary shadow fixed-top m-3" role="alert">
+                    <div class="alert alert-primary shadow fixed-top m-3 text-center" role="alert">
             Redirigiendo a Menú principal...
         </div>`;
 
