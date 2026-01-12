@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#btnDeposit").click(function () {
     const alerta = `
-                    <div class="alert alert-primary shadow fixed-top m-3" role="alert">
+                    <div class="alert alert-primary shadow fixed-top m-3 text-center" role="alert">
             Redirigiendo a pantalla de Depositar dinero...
         </div>`;
 
@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   $("#btnSendMoney").click(function () {
     const alerta = `
-                    <div class="alert alert-primary shadow fixed-top m-3" role="alert">
+                    <div class="alert alert-primary shadow fixed-top m-3 text-center" role="alert">
             Redirigiendo a pantalla de Enviar dinero...
         </div>`;
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
   $("#btnTransactions").click(function () {
     const alerta = `
-                    <div class="alert alert-primary shadow fixed-top m-3" role="alert">
+                    <div class="alert alert-primary shadow fixed-top m-3 text-center" role="alert">
             Redirigiendo a pantalla de Mis Movimientos...
         </div>`;
 
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
   $("#endSession").click(function () {
     const alerta = `
-                    <div class="alert alert-primary shadow fixed-top m-3" role="alert">
+                    <div class="alert alert-primary shadow fixed-top m-3 text-center" role="alert">
             Cerrando sesión...
         </div>`;
 
